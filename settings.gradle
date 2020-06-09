@@ -1,0 +1,2 @@
+rootProject.name='GoldenHand'
+include ':app'
