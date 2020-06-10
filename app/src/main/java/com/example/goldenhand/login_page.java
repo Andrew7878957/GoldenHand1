@@ -23,7 +23,7 @@ public class login_page extends AppCompatActivity {
     EditText ed_email,ed_password;
 
     String str_email,str_password;
-    String url = "http://androidapp.goldenhand.online/signup.php";
+    String url = "http://www.goldenhand.online/android/login.php";
         @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
