@@ -1,9 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
+
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        android:background="@color/colorPrimary"
+        />
+    <View
+        android:id="@+id/secview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        android:background="@drawable/wavetop"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Join Us For Free!"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintWidth_percent="0.60"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:layout_marginTop="4dp"
+
+
+        />
+    <Button
+        android:id="@+id/signbtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_btn"
+        android:text="Sign up"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintHeight_percent=".06"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signbtn"
+        app:layout_constraintHeight_percent="0.68"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/firstnm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="First Name"
+                android:textSize="30dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+            <EditText
+                android:id="@+id/lastnm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="Last Name"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="Password"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/conpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="Confirm Password"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="E-mail"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textWebEmailAddress"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Are You seller ? "
+                android:textSize="20dp"
+                android:textOn="Yes"
+                android:textOff="No"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="20dp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/multiline"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/round_boorder"
+                android:hint="Talk About Yourself "
+                android:textSize="30dp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="20dp"
+                android:lines="5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="invisible"
+
+                />
+
+            <TextView
+                android:id="@+id/store"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Your Store is : "
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:visibility="invisible"
+
+
+                />
+
+            <CheckBox
+                android:id="@+id/onlinckbox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:text="Online"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"
+
+                />
+
+            <CheckBox
+                android:id="@+id/physicalckbox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:text="Physical"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:visibility="invisible"
+
+                />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="Address"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="invisible"
+
+
+                />
+
+            <Spinner
+                android:id="@+id/myspinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:visibility="invisible"
+                android:layout_marginBottom="20dp"
+                />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_boorder"
+                android:hint="Phone"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="phone"
+                android:visibility="invisible"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
