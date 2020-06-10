@@ -135,6 +135,13 @@ public class Register extends AppCompatActivity {
       //  else if(spinner.getSelectedItem().toString().equals("")){
       //      Toast.makeText(this, "Enter Governorate", Toast.LENGTH_SHORT).show();
       //  }
+
+
+
+
+
+
+        
         else if(phone.getText().toString().equals("")){
             Toast.makeText(this, "Enter Phone", Toast.LENGTH_SHORT).show();
         }else{
