@@ -25,16 +25,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topView" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        android:contentDescription="@string/top_icon" />
+   <TextView
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:text="Already Have an Account ? "
+       android:textSize="40dp"
+       android:layout_marginTop="30dp"
+       android:textColor="@color/colorAccent"
+       app:layout_constraintBottom_toBottomOf="@id/topView"
+       />
 
     <EditText
         android:id="@+id/inputEmail"
@@ -108,11 +109,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="389dp"
+        android:layout_width="150dp"
         android:layout_height="163dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_person" />
 

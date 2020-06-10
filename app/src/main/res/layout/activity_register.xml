@@ -17,6 +17,18 @@
         app:layout_constraintHeight_percent="0.13"
         android:background="@color/colorPrimary"
         />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="moveToLogin"
+        android:text="Login"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <View
         android:id="@+id/secview"
         android:layout_width="match_parent"
@@ -41,18 +53,19 @@
 
 
         />
+
     <Button
         android:id="@+id/signbtn"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/round_btn"
+        android:onClick="Register"
         android:text="Sign up"
         android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".06"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"
